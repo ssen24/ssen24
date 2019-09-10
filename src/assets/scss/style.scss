@@ -1,6 +1,31 @@
-@charset "UTF-8";
+// Base module settings
+// $base-duration: 1s !default; // used in 1-base module
+// $base-origin: top center !default;
+// $base-degrees: 30deg !default; // used in lightspeed & special modules
+// $base-fill-mode: both !default;
+// $base-iteration-count: infinite !default;
+
+// $base-timing-function-in: ease-in !default;
+// $base-timing-function-out: ease-out !default;
+// $base-timing-function-in-out: ease-in-out !default;
+
+// $base-distance: 10px !default; // used in fade, shake and bounce modules
+// $base-distance-big: 1000px !default; // used in fadeBig and bounce modules
+$base-duration: 0.8s;
+$use-bounceInUp: true;
+@import "../../../node_modules/animate-sass/animate";
+
+/*---- sass by @Yoohj ------------------------------------------------------------------- */
 $fontColor:blue;
 
 h1 {
+    font-family: 'Black Han Sans', sans-serif;
     color: $fontColor;
+}
+
+body {
+    padding: 10px 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
 }

@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/animate.css/animate.css":
-/*!**********************************************!*\
-  !*** ./node_modules/animate.css/animate.css ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./node_modules/animate.css/animate.css?");
-
-/***/ }),
-
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -186,17 +175,6 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPAC
 
 /***/ }),
 
-/***/ "./src/assets/css/app.css":
-/*!********************************!*\
-  !*** ./src/assets/css/app.css ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/assets/css/app.css?");
-
-/***/ }),
-
 /***/ "./src/assets/css/fontawesome-all.css":
 /*!********************************************!*\
   !*** ./src/assets/css/fontawesome-all.css ***!
@@ -216,7 +194,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n__webpack_require__(/*! bootstrap/scss/bootstrap.scss */ \"./node_modules/bootstrap/scss/bootstrap.scss\");\n\n__webpack_require__(/*! ../css/app.css */ \"./src/assets/css/app.css\");\n\n__webpack_require__(/*! ../css/fontawesome-all.css */ \"./src/assets/css/fontawesome-all.css\");\n\n__webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n\n__webpack_require__(/*! lightbox2/dist/css/lightbox.min.css */ \"./node_modules/lightbox2/dist/css/lightbox.min.css\");\n\n__webpack_require__(/*! lightbox2/dist/js/lightbox-plus-jquery.js */ \"./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js\");\n\nvar _script = __webpack_require__(/*! ./modules/script.js */ \"./src/assets/js/modules/script.js\");\n\nvar _wowAnimate = __webpack_require__(/*! ./modules/wowAnimate.js */ \"./src/assets/js/modules/wowAnimate.js\");\n\n// import '../scss/style.scss';\nconsole.log((0, _script.add)(10, 5));\n// import WOW from 'wow.js';\n\nconsole.log((0, _script.subtract)(10, 5));\nconsole.log((0, _script.multiply)(10, 5));\nconsole.log((0, _script.divide)(10, 5));\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("\n\n__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n__webpack_require__(/*! bootstrap/scss/bootstrap.scss */ \"./node_modules/bootstrap/scss/bootstrap.scss\");\n\n__webpack_require__(/*! ../css/fontawesome-all.css */ \"./src/assets/css/fontawesome-all.css\");\n\n__webpack_require__(/*! ../scss/style.scss */ \"./src/assets/scss/style.scss\");\n\n__webpack_require__(/*! lightbox2/dist/css/lightbox.min.css */ \"./node_modules/lightbox2/dist/css/lightbox.min.css\");\n\n__webpack_require__(/*! lightbox2/dist/js/lightbox-plus-jquery.js */ \"./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js\");\n\nvar _script = __webpack_require__(/*! ./modules/script.js */ \"./src/assets/js/modules/script.js\");\n\nvar _wowAnimate = __webpack_require__(/*! ./modules/wowAnimate.js */ \"./src/assets/js/modules/wowAnimate.js\");\n\nconsole.log((0, _script.add)(10, 5));\n// import WOW from 'wow.js';\n\n// import '../css/app.css';\n// import 'animate.css';\n\nconsole.log((0, _script.subtract)(10, 5));\nconsole.log((0, _script.multiply)(10, 5));\nconsole.log((0, _script.divide)(10, 5));\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ }),
 
@@ -241,6 +219,17 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.wow = undefined;\n\nvar _wow = __webpack_require__(/*! wow.js */ \"./node_modules/wow.js/dist/wow.js\");\n\nvar _wow2 = _interopRequireDefault(_wow);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar wow = new _wow2.default({\n    boxClass: 'wow', // animated element css class (default is wow)\n    animateClass: 'animated', // animation css class (default is animated)\n    offset: 0, // distance to the element when triggering the animation (default is 0)\n    mobile: true, // trigger animations on mobile devices (default is true)\n    live: true, // act on asynchronously loaded content (default is true)\n    callback: function callback(box) {\n        // the callback is fired every time an animation is started\n        // the argument that is passed in is the DOM node being animated\n    },\n    scrollContainer: null, // optional scroll container selector, otherwise use window,\n    resetAnimation: true // reset animation on end (default is true)\n});\nwow.init();\n\nexports.wow = wow;\n\n//# sourceURL=webpack:///./src/assets/js/modules/wowAnimate.js?");
+
+/***/ }),
+
+/***/ "./src/assets/scss/style.scss":
+/*!************************************!*\
+  !*** ./src/assets/scss/style.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/assets/scss/style.scss?");
 
 /***/ })
 

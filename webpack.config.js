@@ -114,6 +114,11 @@ module.exports = {
             filename: 'intro.html',
             template: 'src/intro.html',
             'files': fileOptions
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'page.html',
+            template: 'src/page.html',
+            'files': fileOptions
         })
     ]
 }
