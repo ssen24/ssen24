@@ -105,6 +105,7 @@ module.exports = {
             {from: './src/assets/webfonts/',to: './assets/webfonts/'}
         ]),
         new ExtractTextPlugin('assets/css/app.bundle.css'),
+        new HtmlWebpackPlugin(), // Generates default index.html
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html',
